@@ -1,15 +1,19 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    background-color: #282c35;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .soundboard {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    margin-top: 100px;
+    align-items: center;
 }
 
 .sound-btn {
@@ -18,11 +22,19 @@ body {
     margin: 10px;
     cursor: pointer;
     background-color: #007acc;
-    color: white;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .sound-btn:hover {
     background-color: #005d99;
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#audio {
+    display: none;
 }
